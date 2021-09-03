@@ -28,8 +28,8 @@ font-family: 'Poppins', sans-serif;
   --header-height: 4.5rem;
 
   /* Colors */
-  --hue: 270;
-  --base-color: hsl(var(--hue) 83% 63%);
+  --hue: 214;
+  --base-color: hsl(var(--hue) 81% 71%);
   --base-color-second: hsl(var(--hue) 22% 83%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
@@ -344,15 +344,16 @@ body {
 #about .image::before {
   content: '';
   height: 100%;
-  width: 100%;
+  width: 110%;
   background: var(--base-color);
   position: absolute;
-  top: -8.3%;
+  top: -19.3%;
   left: -33%;
   z-index: 0;
 }
 
 #about .image img {
+  width: 90%;
   position: relative;
 }
 
@@ -371,18 +372,19 @@ body {
 }
 
 .card {
-  padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
-.card i {
+.card img {
   display: block;
   margin-bottom: 1.5rem;
-  font-size: 5rem;
-  color: var(--base-color);
+}
+
+.card .text {
+  padding: 3.25rem 2rem;
 }
 
 .card .title {
@@ -488,8 +490,8 @@ footer {
   background: var(--base-color);
 }
 
-footer .section {
-  padding: 4rem 0;
+footer .section .container {
+  padding: 3rem 0;
 }
 
 footer .logo {
@@ -628,14 +630,24 @@ footer .social a:hover {
     grid-auto-flow: column;
   }
 
+  #home .image::before {
+    top: -11.8%;
+    left: 18.8%;
+  }
+
+  #home .image img {
+    position: relative;
+    left: 3rem;
+  }
+
   /* services */
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .card {
-    padding-left: 3rem;
-    padding-right: 3rem;
+  .card img {
+    width: 100%;
+    height: 15.625rem;
   }
 
   /* testimonials */
